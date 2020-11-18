@@ -1,0 +1,372 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-size: 10px;
+    color: #323845;
+}
+
+h4,
+h5 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+#two-up p{
+    font-size: 1.4rem;
+}
+
+::-webkit-scrollbar {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cccfdc;
+    border-radius: 10rem;
+    border: 4px solid #f7f8fa;
+}
+
+::-webkit-scrollbar-track {
+    background: #f7f8fa;
+    border-radius: 0;
+}
+
+.wrapper {
+    /* max-width: 1024px; */
+    margin: 0 auto;
+    padding: 0;
+    font: 1.2em 'Inter UI', Helvetica, arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8rem;
+}
+
+nav ul li a,
+a:visited {
+    text-decoration: underline solid transparent;
+    transition: text-decoration 400ms ease;
+    font-size: 1.5rem;
+    color: currentcolor;
+    padding-bottom: 2rem;
+    display: inline-block;
+    color: #5b606c;
+}
+
+nav ul li a:hover {
+    text-decoration: underline solid currentcolor;
+}
+
+.main-head {
+    grid-area: header;
+    background: lightgray url('hcs-offering-profile.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+.main-head2 {
+    grid-area: header;
+    background: lightgray url('tyre.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+.main-head3 {
+    grid-area: header;
+    background: lightgray url('logistics.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+}
+
+.content {
+    grid-area: content;
+    padding-right: 36px;
+    padding-left: 36px;
+    border-left: 1px solid #f0f2f5;
+    margin-top: 17px;
+}
+
+#asset-details {
+    margin: 24px;
+}
+
+#asset-title {
+    font-size: 5rem;
+    color: #454545;
+}
+
+#asset-byline {
+    font-size: 24px;
+    color: #323845;
+    line-height: 2.8rem;
+}
+
+.content hr {
+    height: 1px;
+    border: 0;
+    background-color: #f0f2f5;
+    opacity: 0.75;
+}
+
+section>h4 {
+    padding: 1rem 2rem;
+    background-color: #fafbfd;
+    border-radius: 2px;
+    margin: 3rem 0;
+}
+
+section>.subsection {
+    margin-left: 2rem;
+}
+
+section>.subsection ul {
+    list-style-type: none;
+}
+
+section>.subsection li:before {
+    background-color: #5899FA;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    margin-right: 2rem;
+    margin-bottom: 2px;
+    height: 5px;
+    width: 5px;
+}
+
+section>.subsection li {
+    font-size: 1.2rem;
+    color: #9aa3b6;
+    line-height: 2rem;
+    letter-spacing: 0.6px;
+}
+
+section #icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+#two-up {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1.2rem;
+}
+
+#two-up>.child {
+    margin: 1.2rem;
+    width: 50%
+}
+
+.content .media-item {
+    display: flex;
+    margin: 1rem 0 1rem 2rem;
+}
+
+.content .media-item .icon {
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+
+.content .media-item .icon img {
+    width: 15rem;
+}
+
+.content .media-item .excerpt {
+    width: 80%
+}
+
+.content .media-item .excerpt .link {
+    display: inline-flex;
+} 
+
+.content .media-item .excerpt .link img {
+    margin-left: 0.5rem;
+}
+
+.content a{
+    font-size: 2.5rem;
+}
+
+#company .company-header {
+    padding-left: 2rem;
+    display: flex;
+}
+
+#company .company-header #title {
+    width: 70%;
+}
+
+#company h5 {
+    color: #ff5d71;
+    font-size: 2.4rem;
+    padding-left: 2rem;
+}
+
+#company .company-header #icon {
+    width: 30%;
+}
+
+#company .company-members {
+    padding-left: 2rem;
+}
+
+#company .company-members .profile {
+    display: flex;
+    margin-top: 1rem;
+}
+
+#company .company-members .profile .profilepic1 {
+    background: url('assets/choi.png') no-repeat center;
+    object-fit: scale-down;
+    background-size: contain;
+    height: 125px;
+    width: 16rem;
+    border-radius: 4px;
+    margin-top: 1.75rem;
+}
+#company .company-members .profile .profilepic2 {
+    background: url('assets/chan.jpg') no-repeat center;
+    object-fit: scale-down;
+    background-size: contain;
+    height: 125px;
+    width: 16rem;
+    border-radius: 4px;
+    margin-top: 1.75rem;
+}
+#company .company-members .profile .profilepic3 {
+    background: linear-gradient(#dee1e7, #eef1f7);
+    height: 125px;
+    width: 16rem;
+    border-radius: 4px;
+    margin-top: 1.75rem;
+}
+
+#company .company-members .copy {
+    width: 100%;
+    padding-left: 27px;
+}
+
+#company .company-members .copy .bold {
+    color: #323845;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#company .company-members .copy span {
+    color: #9aa3b6;
+}
+
+.details {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.details table .label {
+    margin-right: 10rem;
+    color: #9aa3b6;
+    width: 300px;
+
+}
+
+.details table .value {
+    color: #242631;
+}
+
+.red {
+    color: #5899FA;
+    text-decoration: underline solid transparent;
+    transition: text-decoration 400ms ease;
+    font-weight: bold;
+}
+
+.red:hover {
+    text-decoration: underline solid currentcolor;
+}
+
+.details .highlight {
+    font-weight: bold;
+}
+
+.downloads-list {}
+
+.downloads-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.main-nav {
+    margin-top: 56px;
+    margin-left: 31px;
+    grid-area: nav;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 4px;
+    grid-template-areas: "header" "nav" "content";
+}
+
+tr.spaceUnder>td {
+    padding-bottom: 1em;
+}
+
+#termsheet>h4,
+#moredownloads>h4,
+#offeringcircular>h4,
+#risks>h4,
+#priorrounds>h4 {
+    margin-bottom: 1rem
+}
+
+#inMedia{
+    padding-bottom: 1rem;
+}
+#moredownloads{
+    padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "header  header" "nav     nav" "content content";
+    }
+    .content .media-item .icon img {
+        width: 100%;
+    }
+    .content {
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .wrapper {
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: "header header  " "nav    content " "nav    content "
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .content .media-item .icon img {
+        width: 100%;
+    }
+}
