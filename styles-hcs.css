@@ -21,6 +21,10 @@ p {
     line-height: 3rem;
     font-size: 1.5rem;
 }
+ul {
+    padding-left: 0px;
+    padding-right: 10rem;
+}
 
 #two-up p{
     font-size: 1.4rem;
@@ -71,6 +75,16 @@ nav ul li a:hover {
     text-decoration: underline solid currentcolor;
 }
 
+.container {
+    max-width:100%;
+    max-height:100%;
+}
+
+.container img {
+    max-width:100%;
+    max-height:100%;
+}
+
 .main-head {
     grid-area: header;
     background: lightgray url('hcs-offering-profile.jpg') no-repeat center center;
@@ -105,8 +119,8 @@ nav ul li a:hover {
 }
 
 #asset-title {
-    font-size: 5rem;
-    color: #454545;
+    font-size: 4rem;
+    color: rgb(153, 128, 0);
 }
 
 #asset-byline {
@@ -134,25 +148,17 @@ section>.subsection {
 }
 
 section>.subsection ul {
-    list-style-type: none;
-}
-
-section>.subsection li:before {
-    background-color: #5899FA;
-    border-radius: 50%;
-    content: "";
-    display: inline-block;
-    margin-right: 2rem;
-    margin-bottom: 2px;
-    height: 5px;
-    width: 5px;
+    list-style-type: circle;
+    margin-left: 2.5rem;
 }
 
 section>.subsection li {
-    font-size: 1.2rem;
-    color: #9aa3b6;
-    line-height: 2rem;
-    letter-spacing: 0.6px;
+    font-size: 1.8rem;
+    color: #323845;
+    line-height: 3rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    padding-left: 5px;
 }
 
 section #icon {
@@ -203,35 +209,36 @@ section #icon {
     font-size: 2.5rem;
 }
 
-#company .company-header {
+#investmentadvisor .company-header {
     padding-left: 2rem;
     display: flex;
 }
 
-#company .company-header #title {
+#investmentadvisor .company-header #title {
     width: 70%;
 }
 
-#company h5 {
-    color: #ff5d71;
+#investmentadvisor h5 {
+    color: #DAA520;
     font-size: 2.4rem;
     padding-left: 2rem;
+    text-decoration: underline;
 }
 
-#company .company-header #icon {
+#investmentadvisor .company-header #icon {
     width: 30%;
 }
 
-#company .company-members {
+#investmentadvisor .company-members {
     padding-left: 2rem;
 }
 
-#company .company-members .profile {
+#investmentadvisor .company-members .profile {
     display: flex;
     margin-top: 1rem;
 }
 
-#company .company-members .profile .profilepic1 {
+#investmentadvisor .company-members .profile .profilepic1 {
     background: url('assets/choi.png') no-repeat center;
     object-fit: scale-down;
     background-size: contain;
@@ -240,7 +247,7 @@ section #icon {
     border-radius: 4px;
     margin-top: 1.75rem;
 }
-#company .company-members .profile .profilepic2 {
+#investmentadvisor .company-members .profile .profilepic2 {
     background: url('assets/chan.jpg') no-repeat center;
     object-fit: scale-down;
     background-size: contain;
@@ -249,7 +256,7 @@ section #icon {
     border-radius: 4px;
     margin-top: 1.75rem;
 }
-#company .company-members .profile .profilepic3 {
+#investmentadvisor .company-members .profile .profilepic3 {
     background: linear-gradient(#dee1e7, #eef1f7);
     height: 125px;
     width: 16rem;
@@ -257,18 +264,18 @@ section #icon {
     margin-top: 1.75rem;
 }
 
-#company .company-members .copy {
+#investmentadvisor .company-members .copy {
     width: 100%;
     padding-left: 27px;
 }
 
-#company .company-members .copy .bold {
+#investmentadvisor .company-members .copy .bold {
     color: #323845;
     font-weight: bold;
     font-size: 1.4rem;
 }
 
-#company .company-members .copy span {
+#investmentadvisor .company-members .copy span {
     color: #9aa3b6;
 }
 
@@ -289,7 +296,7 @@ section #icon {
 }
 
 .red {
-    color: #5899FA;
+    color: #DAA520;
     text-decoration: underline solid transparent;
     transition: text-decoration 400ms ease;
     font-weight: bold;
@@ -356,12 +363,18 @@ tr.spaceUnder>td {
         padding-left: 0px;
         padding-right: 10px;
     }
+    ul {
+        padding-right: 0;
+    }
 }
 
 @media only screen and (min-width: 700px) {
     .wrapper {
-        grid-template-columns: 1fr 4fr;
-        grid-template-areas: "header header  " "nav    content " "nav    content "
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "nav content content" 
+        "nav content content" 
+        "nav content content"
     }
     nav ul {
         flex-direction: column;
